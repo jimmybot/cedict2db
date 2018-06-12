@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+rm -Rf data/source
+rm -Rf data/derived
+mkdir -p data/source
+mkdir -p data/derived
+wget -nc -O data/source/cedict.zip https://www.mdbg.net/chinese/export/cedict/cedict_1_0_ts_utf-8_mdbg.zip
+unzip data/source/cedict.zip -d data/source
